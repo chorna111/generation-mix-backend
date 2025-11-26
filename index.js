@@ -10,7 +10,7 @@ const logger=winston.createLogger({
     new winston.transports.Console()
   ]
 })
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 app.use(cors({
   origin:"http://localhost:5173",
   methods: ['GET','POST']
