@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const winston=require('winston')
 const cors=require('cors')
-const generationMix=require('./routes/generation_mix')
+const generationMix=require('./routes/generationMix')
 const logger=winston.createLogger({
     
     format: winston.format.simple(),
@@ -12,7 +12,7 @@ const logger=winston.createLogger({
 })
 const port = process.env.PORT || 10000;
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://generation-mix-frontend.onrender.com",
   methods: ['GET','POST']
 }))
 app.use('/api',generationMix)
