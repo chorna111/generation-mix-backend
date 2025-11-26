@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "winston": "^3.18.3"
+  },
+  "scripts": {"start": "node index.js"}
+}
